@@ -1,33 +1,91 @@
-/* font-family: Inter, Avenir, Helvetica, Arial, sans-serif; */
-/* :root {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 400;
+:root {
+  --font-family: 'Sarabun', sans-serif;
+  --second-family: 'Cabin', sans-serif;
+  --third-family: 'Roboto', sans-serif;
 
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+  --color-scheme-1-background: var(--color-hawkes-blue-lighter);
+  --color-neutral-darkest: #0d0b0a;
+  --color-scheme-1-border: var(--opacity-neutral-darkest-15);
+  --color-scheme-1-text: var(--color-neutral-darkest);
+  --color-neutral-lighter: #dadada;
+  --color-white: #fff;
+  --color-neutral-lightest: #f2f2f2;
+  --color-neutral-light: #b6b5b5;
+  --color-neutral: #868584;
+  --color-neutral-dark: #555453;
+  --color-neutral-darker: #252322;
+  --opacity-transparent: rgba(255, 255, 255, 0);
+  --color-scheme-1-foreground: var(--color-hawkes-blue-lightest);
+  --color-scheme-1-accent: var(--color-neutral-darkest);
+  --opacity-white-5: rgba(255, 255, 255, 0.05);
+  --opacity-white-10: rgba(255, 255, 255, 0.1);
+  --opacity-white-15: rgba(255, 255, 255, 0.15);
+  --opacity-white-20: rgba(255, 255, 255, 0.2);
+  --opacity-white-30: rgba(255, 255, 255, 0.3);
+  --opacity-white-40: rgba(255, 255, 255, 0.4);
+  --opacity-white-50: rgba(255, 255, 255, 0.5);
+  --opacity-white-60: rgba(255, 255, 255, 0.6);
+  --opacity-neutral-darkest-5: rgba(13, 11, 10, 0.05);
+  --opacity-neutral-darkest-10: rgba(13, 11, 10, 0.1);
+  --opacity-neutral-darkest-15: rgba(13, 11, 10, 0.15);
+  --opacity-neutral-darkest-20: rgba(13, 11, 10, 0.2);
+  --opacity-neutral-darkest-30: rgba(13, 11, 10, 0.3);
+  --opacity-neutral-darkest-40: rgba(13, 11, 10, 0.4);
+  --opacity-neutral-darkest-50: rgba(13, 11, 10, 0.5);
+  --opacity-neutral-darkest-60: rgba(13, 11, 10, 0.6);
+  --color-hawkes-blue-lightest: #f8fbfe;
+  --color-hawkes-blue-lighter: #dfebeb;
+  --color-hawkes-blue-light: #ddebeb;
+  --color-hawkes-blue: #c2d9fc;
+  --color-hawkes-blue-dark: #9badc9;
+  --color-hawkes-blue-darker: #4d5664;
+  --color-hawkes-blue-darkest: #3a414b;
+  --color-drover-lightest: #f2fafa;
+  --color-drover-lighter: #fefdf0;
+  --color-drover-light: #fcfacb;
+  --color-drover: #fcf9b6;
+  --color-drover-dark: #c9c791;
+  --color-drover-darker: #646348;
+  --color-drover-darkest: #4b4a36;
+  --color-tuft-bush-lightest: #fffbf9;
+  --color-tuft-bush-lighter: #fff7f4;
+  --color-tuft-bush-light: #ffe4db;
+  --color-tuft-bush: #ffd9cc;
+  --color-tuft-bush-dark: #ccada3;
+  --color-tuft-bush-darker: #665651;
+  --color-tuft-bush-darkest: #4c413d;
+  --color-scheme-2-text: var(--color-neutral-darkest);
+  --color-scheme-2-background: var(--color-hawkes-blue-lightest);
+  --color-scheme-2-border: var(--opacity-neutral-darkest-15);
+  --color-scheme-2-accent: var(--color-neutral-darkest);
+  --color-scheme-2-foreground: var(--color-hawkes-blue-lighter);
+  --color-scheme-3-text: var(--color-neutral-darkest);
+  --color-scheme-3-background: var(--color-drover-lightest);
+  --color-scheme-3-border: var(--opacity-neutral-darkest-15);
+  --color-scheme-3-accent: var(--color-neutral-darkest);
+  --color-scheme-3-foreground: var(--color-drover-lighter);
+  --color-scheme-4-text: var(--color-neutral-darkest);
+  --color-scheme-4-background: var(--color-drover-lighter);
+  --color-scheme-4-border: var(--opacity-neutral-darkest-15);
+  --color-scheme-4-accent: var(--color-neutral-darkest);
+  --color-scheme-4-foreground: var(--color-drover-lightest);
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-  min-width: 100vw;
-  min-height: 100vh;
-  margin: 0;
+  font-family: var(--font-family);
+  color: var(--color-scheme-1-text);
+  background-color: var(--color-scheme-3-background);
 }
 
-main {
-  flex-grow: 1;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
-main:has(.back-link) {
-  text-align: center;
-}
- */
