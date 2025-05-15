@@ -124,23 +124,6 @@
     flex-basis: 100%;
   }
 
-  /*   .restorative-litem {
-    width: 100%;
-  } */
-  /* 
-  .restorative-thumb {
-    width: 100%;
-    height: 282px;
-  }
- */
-  /*   .programs-picture {
-    border-radius: 16px;
-    object-fit: cover;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-  } */
-
   .restorative-picture {
     height: 100%;
     width: 100%;
@@ -169,7 +152,7 @@
 
     width: 110px;
     height: 46px;
-    font-size: 15px; /* ?? */
+    font-size: 15px;
   }
 
   .programs-btn {
