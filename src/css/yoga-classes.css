@@ -1,1 +1,201 @@
 /* Yoga Classes */
+.yoga-classes {
+  padding: 64px 0;
+  background-color: var(--color-scheme-1-background);
+}
+
+.programs-explore-text {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.programs-subtitle {
+  font-family: var(--second-family);
+  font-size: 40px;
+  line-height: 120%;
+  letter-spacing: 0.01em;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.programs-third-title-foundations {
+  display: none;
+}
+
+.programs-above-text {
+  font-size: 16px;
+  line-height: 160%;
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.programs-list {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+  flex-wrap: wrap;
+  margin-bottom: 48px;
+}
+
+.programs-litem {
+  flex-basis: 100%;
+}
+
+.programs-picture-thumb {
+  border-radius: 16px;
+  overflow: hidden;
+  margin-bottom: 24px;
+}
+
+.programs-picture {
+  border-radius: 16px;
+  object-fit: cover;
+}
+
+.programs-third-title {
+  font-family: var(--second-family);
+  font-size: 24px;
+  line-height: 140%;
+  letter-spacing: 0.01em;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.programs-text-underneath {
+  font-size: 16px;
+  line-height: 160%;
+  text-align: center;
+}
+
+.programs-link-btn {
+  border: 1px solid var(--color-hawkes-blue);
+  border-radius: 100px;
+  padding: 10px 24px;
+  width: 343px;
+  height: 46px;
+  display: block;
+  background-color: var(--color-hawkes-blue);
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 160%;
+  color: var(--color-neutral-darkest);
+  text-align: center;
+}
+
+.programs-now-btn {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .yoga-classes {
+    padding: 40px 0;
+    background-color: var(--color-scheme-3-background);
+  }
+
+  .programs-explore-text {
+    margin-bottom: 16px;
+  }
+
+  .programs-subtitle {
+    margin-bottom: 24px;
+  }
+
+  .programs-above-text {
+    margin-bottom: 40px;
+  }
+
+  .programs-list {
+    align-items: baseline;
+    justify-content: stretch;
+    column-gap: 24px;
+    row-gap: 27px;
+    margin-bottom: 61px;
+  }
+
+  .programs-litem {
+    flex-basis: calc((100% - 24px) / 2);
+  }
+
+  .programs-litem:last-child {
+    flex-basis: 100%;
+  }
+
+  .restorative-picture {
+    height: 100%;
+    width: 100%;
+  }
+
+  .programs-picture-thumb {
+    margin-bottom: 16px;
+  }
+
+  .programs-third-title-foundations {
+    display: block;
+  }
+
+  .programs-third-title-practitioners {
+    display: none;
+  }
+
+  .programs-third-title {
+    margin-bottom: 0;
+  }
+
+  .programs-link-btn {
+    border-radius: 100px;
+    padding: 10px 24px;
+    margin: 0 auto;
+
+    width: 110px;
+    height: 46px;
+    font-size: 15px;
+  }
+
+  .programs-btn {
+    display: none;
+  }
+
+  .programs-now-btn {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1336px) {
+  .yoga-classes {
+    padding: 112px 0;
+  }
+
+  .programs-subtitle {
+    font-size: 52px;
+    max-width: 768px;
+    margin: 0 auto;
+    margin-bottom: 24px;
+  }
+
+  .programs-above-text {
+    font-size: 18px;
+    max-width: 768px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+
+  .programs-list {
+    align-items: baseline;
+    justify-content: center;
+    flex-wrap: nowrap;
+    margin-bottom: 40px;
+  }
+
+  .programs-list .programs-litem {
+    flex-basis: calc((100% - 48px) / 3);
+  }
+
+  .programs-third-title {
+    font-size: 36px;
+    margin-bottom: 24px;
+  }
+}
