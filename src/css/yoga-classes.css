@@ -21,9 +21,9 @@
   margin-bottom: 20px;
 }
 
-.programs-third-title-foundations {
+/* .programs-third-title-foundations {
   display: none;
-}
+} */
 
 .programs-above-text {
   font-size: 16px;
@@ -133,13 +133,13 @@
     margin-bottom: 16px;
   }
 
-  .programs-third-title-foundations {
+  /*  .programs-third-title-foundations {
     display: block;
   }
 
   .programs-third-title-practitioners {
     display: none;
-  }
+  } */
 
   .programs-third-title {
     margin-bottom: 0;
