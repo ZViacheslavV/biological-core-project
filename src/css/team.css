@@ -2,4 +2,151 @@
 .team_section {
     background-color: #f2fafa;
     padding: 64px 0;
+    max-width: 375px;
+    margin: 0 auto;
+}
+
+.team_section_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.team_section_title {
+    font-family: "Cabin", sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 1.2;
+    letter-spacing: 0.01em;
+    text-align: center;
+    color: #0d0b0a;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.team_section_mini_title {
+    font-family: "Sarabun", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    color: #0d0b0a;
+    margin-bottom: 12px;
+}
+
+.team_section_p {
+    font-family: "Sarabun", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    color: #0d0b0a;
+    margin-bottom: 48px;
+}
+
+.team_section_list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 48px;
+    width: 100%;
+}
+
+.team_section_list_item {
+    text-align: center;
+    border-radius: 0 0 4px 4px;
+    overflow: hidden;
+}
+
+.team-name-title {
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.team-position-title {
+    margin-bottom: 12px;
+    font-family: "Sarabun", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.team-info-title {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.hidden-social {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.team-socials-list {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.team-social-svg:hover,
+.team-social-svg:focus,
+.team-social-svg:active {
+    fill: #868584;
+}
+
+.team-social-svg {
+    stroke: transparent;
+    fill: #0D0B0A;
+    transition: fill 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 768px) {
+    .team_section {
+        max-width: 768px;
+        padding: 40px 32px;
+    }
+
+    .team_section_list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 24px;
+        align-items: stretch;
+    }
+    
+
+    .team_section_list_item {
+        width: calc((100% - 24px) / 2);
+        display: flex;
+        flex-direction: column;
+    }
+
+        .team-socials-list {
+            margin-top: auto;  
+    }
+}
+
+@media screen and (min-width: 1336px) {
+
+    .team_section {
+        max-width: 1336px;   
+    }
+
+    .team_section_list_item {
+        width: calc((100% - 48px) / 3);
+    } 
 }
