@@ -34,6 +34,25 @@
   width: 74px;
   height: 34px;
   background: #c2d9fc;
+  position: relative;
+}
+
+@media screen and (min-width: 768px) {
+  .page-header-link {
+    padding: 8px 20px;
+    width: 105px;
+    height: 42px;
+  }
+  .page-header-link::after {
+    content: 'now';
+  }
+}
+@media screen and (min-width: 1158px) {
+  .page-header-link {
+    padding: 8px 20px;
+    width: 105px;
+    height: 42px;
+  }
 }
 
 @media screen and (max-width: 767px) {
