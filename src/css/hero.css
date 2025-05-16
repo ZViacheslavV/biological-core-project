@@ -1,1 +1,129 @@
-/* Hero */
+/* Hero-mobile */
+
+.hero-image,
+.hero-picture {
+  width: 100%;
+  height: auto;
+}
+.container.hero-container {
+  padding: 48px 16px;
+  background: var(--color-scheme-3-background);
+}
+.hero-title {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 120%;
+  letter-spacing: 0.01em;
+  color: var(--color-scheme-3-text);
+  width: 343px;
+  height: 159px;
+  margin-bottom: 20px;
+}
+
+.hero-title-word {
+  display: inline-block;
+}
+
+.hero-description {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: var(--color-scheme-3-text);
+  width: 343px;
+  height: 104px;
+  margin-bottom: 24px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.btn.join {
+  border: 1px solid var(--color-hawkes-blue);
+  border-radius: 100px;
+  padding: 10px 24px;
+  width: 329px;
+  height: 46px;
+  background: var(--color-hawkes-blue);
+  text-align: center;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 160%;
+  color: var(--color-neutral-darkest);
+}
+.btn-extra {
+  display: none;
+}
+
+.btn.learn {
+  border: 1px solid var(--opacity-transparent);
+  border-radius: 100px;
+  padding: 10px 24px;
+  width: 329px;
+  height: 46px;
+  background: var(--opacity-neutral-darkest-5);
+  text-align: center;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 160%;
+  color: var(--color-neutral-darkest);
+}
+/*-----------------*/
+
+/* Hero-tablet */
+@media screen and (min-width: 768px) {
+  .container.hero-container {
+    padding: 24px 32px;
+  }
+  .hero-title {
+    width: 426px;
+    height: 106px;
+    margin-bottom: 20px;
+  }
+  .hero-title-word {
+    visibility: hidden;
+    position: relative;
+  }
+  .hero-title-word::after {
+    content: 'Classes';
+    visibility: visible;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .hero-description {
+    font-size: 18px;
+    width: 641px;
+    height: 58px;
+    margin-bottom: 32px;
+  }
+  .buttons {
+    flex-direction: row;
+  }
+
+  .btn.join,
+  .btn.learn {
+    width: 144px;
+  }
+  .btn-extra {
+    display: inline-block;
+    text-align: right;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 160%;
+    color: var(--color-neutral-darkest);
+  }
+}
+
+/*-----------------*/
+
+/* Hero-desktop */
+
+/*-----------------*/
