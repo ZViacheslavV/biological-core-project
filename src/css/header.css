@@ -16,7 +16,7 @@
 
 @media screen and (min-width: 768px) {
 }
-@media screen and (min-width: 1158px) {
+@media screen and (min-width: 1336px) {
   .burger-btn {
     display: none;
   }
@@ -47,7 +47,7 @@
     content: 'now';
   }
 }
-@media screen and (min-width: 1158px) {
+@media screen and (min-width: 1336px) {
   .page-header-link {
     padding: 8px 20px;
     width: 105px;
@@ -65,7 +65,7 @@
     display: none;
   }
 }
-@media screen and (min-width: 1158px) {
+@media screen and (min-width: 1336px) {
   .header-nav {
     display: block;
   }
