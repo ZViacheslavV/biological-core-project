@@ -1,7 +1,7 @@
 /* Team */
 .team_section {
     background-color: #f2fafa;
-    padding: 64px 0;
+    padding: 64px 16px;
     max-width: 375px;
     margin: 0 auto;
 }
@@ -61,6 +61,17 @@
     overflow: hidden;
 }
 
+.team-photo-img img {
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.team-photo-info-cont {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
 .team-name-title {
     margin-top: 20px;
     font-weight: 600;
@@ -81,6 +92,8 @@
     font-size: 16px;
     line-height: 1.6;
     margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
 }
 
 .hidden-social {
@@ -115,10 +128,12 @@
 }
 
 @media screen and (min-width: 768px) {
+    
     .team_section {
         max-width: 768px;
         padding: 40px 32px;
     }
+
 
     .team_section_list {
         flex-direction: row;
@@ -127,26 +142,63 @@
         gap: 24px;
         align-items: stretch;
     }
-    
 
     .team_section_list_item {
         width: calc((100% - 24px) / 2);
         display: flex;
         flex-direction: column;
+        height: 100%;
     }
 
-        .team-socials-list {
-            margin-top: auto;  
+    .team-name-title {
+        margin-top: 24px;  
     }
+
+    .team-info-title {
+        margin-bottom: 24px;
+    }
+
+    .team-position-title {
+        margin-bottom: 16px;
+        max-width: 400px;
+    }
+
+    .team-socials-list {
+        margin-top: auto;  
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1335px) {
+    
+    .team-photo-img img {
+        width: 100%;
+        height: 400px;
+    } 
 }
 
 @media screen and (min-width: 1336px) {
 
     .team_section {
-        max-width: 1336px;   
+        max-width: 1336px;
+        padding: 112px 64px;
+    }
+
+    .team_section_list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 64px 24px;
     }
 
     .team_section_list_item {
         width: calc((100% - 48px) / 3);
+        display: flex;
+        flex-direction: column;
     } 
+    
+
+    .team-photo-img img {
+        width: 421px;
+        height: 410px;  
+    }
 }
