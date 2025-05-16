@@ -1,1 +1,37 @@
 /* Header */
+.page-header {
+  background: #f2fafa;
+}
+
+.container-header {
+  height: 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.burger-btn {
+  background-color: transparent;
+}
+
+@media screen and (min-width: 768px) {
+}
+@media screen and (min-width: 1158px) {
+  .burger-btn {
+    display: none;
+  }
+}
+
+.page-header-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 8px;
+  border: 1px solid #c2d9fc;
+  border-radius: 100px;
+  padding: 4px 20px;
+  width: 74px;
+  height: 34px;
+  background: #c2d9fc;
+}
