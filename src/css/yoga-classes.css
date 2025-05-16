@@ -74,7 +74,7 @@
   border: 1px solid var(--color-hawkes-blue);
   border-radius: 100px;
   padding: 10px 24px;
-  width: 343px;
+  max-width: 343px;
   height: 46px;
   display: block;
   background-color: var(--color-hawkes-blue);
@@ -144,9 +144,9 @@
     padding: 10px 24px;
     margin: 0 auto;
 
-    width: 110px;
+    max-width: 112px;
     height: 46px;
-    font-size: 15px;
+    font-size: 16px;
   }
 
   .programs-link-btn::before {
