@@ -1,13 +1,6 @@
 /* Gallery */
 /* Gallery */
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-ul{
-    list-style: none;
-}
+
 .gallery-section{
     max-width: 375px;
 }
@@ -22,7 +15,7 @@ ul{
 .title-gallery{
     color: #0D0B0A;
     text-align: center;
-    font-family: Cabin;
+    font-family: Cabin, sans-serif;
     font-size: 40px;
     font-style: normal;
     font-weight: 400;
@@ -33,7 +26,7 @@ ul{
 .title-text-down-gallery{
     color: #0D0B0A;
     text-align: center;
-    font-family: Sarabun;
+    font-family: Sarabun, sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -100,6 +93,6 @@ ul{
     gap: 24px;
    }
   .gallery-item {
-   width: calc((100% - 24px) / 3);
+   width: calc((100% - 48px) / 3);
   }
   }
