@@ -1,6 +1,7 @@
 /* Header */
 .page-header {
   background: #f2fafa;
+  z-index: 1;
 }
 
 .container-header {
