@@ -15,14 +15,14 @@
       padding: 40px 32px;
       background: var(--color-scheme-3-background);
     }
-  }
+}
   
 @media only screen and (min-width: 1336px) {
-    .container {
+    .pricing-container{
       max-width: 1440px;
-      padding: 0 64px;
+      padding: 112px 64px;
     }
-  }
+}
 
 .pricing-title {
     font-weight: 600;
@@ -37,14 +37,7 @@
     .pricing-title {
         margin-bottom: 16px;
     }
-  }
-  
-@media only screen and (min-width: 1336px) {
-    .container {
-      max-width: 1440px;
-      padding: 0 64px;
-    }
-  }
+}
 
 .pricing-main-title {
     font-family: var(--second-family);
@@ -61,14 +54,13 @@
     .pricing-main-title {
         margin-bottom: 24px;
     }
-  }
+}
   
 @media only screen and (min-width: 1336px) {
-    .container {
-      max-width: 1440px;
-      padding: 0 64px;
+    .pricing-main-title {
+        font-size: 52px;
     }
-  }
+}
 
 .pricing-text {
     font-weight: 400;
@@ -84,16 +76,16 @@
       font-size: 18px;
       margin-bottom: 24px;
     }
-  }
+}
   
-  @media only screen and (min-width: 1336px) {
-    .container {
-      max-width: 1440px;
-      padding: 0 64px;
-    }
-  }
+@media only screen and (min-width: 1336px) {
+    .pricing-text {
+        margin-bottom: 40px;
+      }
+}
 
 .pricing-list {
+
 }
 
 @media only screen and (min-width: 768px) {
@@ -104,12 +96,12 @@
     }
   }
   
-  @media only screen and (min-width: 1336px) {
-    .container {
-      max-width: 1440px;
-      padding: 0 64px;
+@media only screen and (min-width: 1336px) {
+    .pricing-list {
+        display: flex;
+        flex-wrap: nowrap;
     }
-  }
+}
 
 .pricing-item {
     border: 0px solid var(--color-scheme-2-border);
@@ -120,7 +112,7 @@
     margin-bottom: 32px;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1335px) {
     .pricing-item {
         padding: 16px;
         max-width: 340px;
@@ -141,19 +133,22 @@
         display: flex;
         gap: 32px;
     }
-  }
+}
   
-  @media only screen and (min-width: 1336px) {
-    
-  }
+@media only screen and (min-width: 1336px) {
+    .pricing-item {
+        padding: 32px;
+        max-width: 421px;
+        min-height: 550px;
+        flex-basis: calc((100% - 48px) / 3);
+        margin-bottom: 0;
+        position: relative;
+    }
+}
 
 .pricing-list:nth-child(3) .pricing-item {
     margin-bottom: 0;
 }
-  
-  @media only screen and (min-width: 1336px) {
-    
-  }
 
 .pricing-item-title {
     font-family: var(--second-family);
@@ -166,7 +161,7 @@
     margin-bottom: 8px;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1335px) {
     .pricing-item-title {
       font-size: 22px;
     }
@@ -183,13 +178,13 @@
         margin-bottom: 24px;
         order: 1;
     }
-  }
+}
   
-  @media only screen and (min-width: 1336px) {
-    .pricing-item-tabl-box{
-        display: none;
+@media only screen and (min-width: 1336px) {
+    .pricing-item-title {
+        font-size: 22px;
     }
-  }
+}
 
 .pricing-item-text {
     font-family: var(--second-family);
@@ -202,7 +197,7 @@
     margin-bottom: 24px;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1335px) {
     .pricing-item-text {
       font-size: 72px;
       margin-bottom: 32px;
@@ -212,11 +207,14 @@
         font-size: 72px;
         order: 2;
     }
-  }
+}
   
-  @media only screen and (min-width: 1336px) {
-    
-  }
+@media only screen and (min-width: 1336px) {
+    .pricing-item-text {
+        font-size: 72px;
+        margin-bottom: 32px;
+    }
+}
 
 .pricing-tablet-btn {
     display: none;
@@ -236,6 +234,12 @@
         line-height: 1.6;
         color: var(--color-neutral-darkest);
         order: 3;
+    }
+
+    .pricing-tablet-btn:hover, .pricing-tablet-btn:focus {
+        border: 1px solid #e1edff;
+        background: #e1edff;
+        color: #0d0b0a;
     }
 }
 
@@ -258,7 +262,7 @@
     margin-bottom: 32px;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1335px) {
     .pricing-wrap-list {
         max-width: 308px;
         margin-bottom: 22px;
@@ -271,47 +275,39 @@
     }
   }
   
-  @media only screen and (min-width: 1336px) {
-    
-  }
+@media only screen and (min-width: 1336px) {
+    .pricing-wrap-list {
+        max-width: 357px;
+        margin-bottom: 32px;
+    }
+}
 
 .pricing-wrap-item {
     
 }
-  
-  @media only screen and (min-width: 1336px) {
-    
-  }
 
 .pricing-wrap-item-box {
     display: flex;
     gap: 16px;
+    align-items: center;
 }
-  
-  @media only screen and (min-width: 1336px) {
-    
-  }
 
 .pricing-wrap-item-box-svg {
     fill: var(--color-scheme-2-text);
     width: 24px;
     height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-  
-  @media only screen and (min-width: 1336px) {
-    
-  }
 
 .pricing-wrap-item-text {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.6;
     color: var(--color-scheme-2-text);
+    max-width: 228px;
 }
-  
-  @media only screen and (min-width: 1336px) {
-    
-  }
 
 .pricing-btn {
     display: block;
@@ -333,9 +329,14 @@
     }
 }
   
-  @media only screen and (min-width: 1336px) {
-    
-  }
+@media only screen and (min-width: 1336px) {
+    .pricing-btn {
+        display: block;
+        width: 357px;
+        position: absolute;
+        bottom: 32px;
+    }
+}
 
 .pricing-btn:hover, .pricing-btn:focus {
     border: 1px solid #e1edff;
