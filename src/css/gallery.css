@@ -4,7 +4,7 @@
 .gallery-section{
     max-width: 375px;
 }
-.container{
+.container-gallery{
     display: flex;
     width: 375px;
     padding: 64px 20px;
@@ -45,7 +45,7 @@
   
  
   @media (min-width: 768px) {
-    .container{
+    .container-gallery{
     display: flex;
     width: 768px;
     padding: 40px 32px;
@@ -69,7 +69,7 @@
   
   
   @media (min-width: 1336px) {
-   .container{
+   .container-gallery{
     display: flex;
     width: 1440px;
     padding: 112px 64px;
@@ -96,4 +96,4 @@
    width: calc((100% - 48px) / 3);
   }
   }
-  /*  */
+  
