@@ -33,10 +33,11 @@
   margin-bottom: 48px;
 }
 .gallery {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 24px;
-}
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px; 
+    
+  }
 
 .gallery-item {
   width: calc((100% - 24px) / 2);
@@ -56,15 +57,13 @@
 
   .title-text-down-gallery {
     margin-bottom: 80px;
+    }
+  
   }
-  .gallery-item {
-    flex: 1 0 0;
-    align-self: stretch;
-  }
-}
-
-@media (min-width: 1336px) {
-  .container-gallery {
+  
+  
+  @media (min-width: 1336px) {
+   .container-gallery{
     display: flex;
     width: 1440px;
     padding: 112px 64px;
