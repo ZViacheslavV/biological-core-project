@@ -1,7 +1,7 @@
 /* Team */
 .team_section {
     background-color: #f2fafa;
-    padding: 64px 16px;
+    padding: 64px 0;
     max-width: 375px;
     margin: 0 auto;
 }
@@ -131,7 +131,7 @@
     
     .team_section {
         max-width: 768px;
-        padding: 40px 32px;
+        padding: 40px 0;
     }
 
 
@@ -179,8 +179,8 @@
 @media screen and (min-width: 1336px) {
 
     .team_section {
-        max-width: 1336px;
-        padding: 112px 64px;
+        max-width: 1440px;
+        padding: 112px 0;
     }
 
     .team_section_list {
