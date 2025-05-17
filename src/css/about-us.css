@@ -70,16 +70,9 @@
 
 @media screen and (min-width: 768px) {
   .list-about-us {
-    column-gap: 24px;
-    row-gap: 46.5px;
+    gap: 24px;
 
     margin-bottom: 40px;
-  }
-}
-
-@media screen and (min-width: 1336px) {
-  .list-about-us {
-    column-gap: 24px;
   }
 }
 
@@ -153,7 +146,7 @@
 
 @media screen and (min-width: 768px) {
   .join-link-about-us {
-    width: 115px;
+    max-width: 112px;
     margin: 0 auto;
   }
 }
