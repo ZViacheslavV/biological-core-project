@@ -9,13 +9,17 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: relative;
+  /* position: relative; */
+  gap: 161px;
 }
 
 .header-logo {
-  position: absolute;
+  /* position: absolute;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%); */
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-start;
 }
 
 .burger-btn {
