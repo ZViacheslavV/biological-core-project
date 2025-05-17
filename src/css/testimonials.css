@@ -86,7 +86,7 @@
 
 /* Tablet */
 
-@media screen and (min-width: 768px) and (max-width: 1336px) {
+@media screen and (min-width: 768px) {
     .testimonials {
         padding: 40px 0;
     }
@@ -128,7 +128,7 @@
     } 
 
     .feedback-item {
-        width: min(644px, calc(50% - 12px));
+        width: calc((100% - 24px) / 2);
     }
   
     .feedback-item:nth-child(1),
