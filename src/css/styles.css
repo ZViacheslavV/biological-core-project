@@ -10,6 +10,13 @@
 @import url('./container.css');
 @import url('./animations.css');
 
+/* Experimental styles-animations-hovers-etc */
+@import url('./experimental-addon-1.css');
+@import url('./experimental-addon-2.css');
+@import url('./experimental-addon-3.css');
+@import url('./experimental-addon-4.css');
+@import url('./experimental-addon-5.css');
+
 /* Sections style */
 @import url('./header.css');
 @import url('./navbar.css');
