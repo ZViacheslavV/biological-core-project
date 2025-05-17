@@ -9,6 +9,11 @@
   padding: 48px 16px;
   background: var(--color-scheme-3-background);
 }
+.title-container {
+  width: 343px;
+  height: 159px;
+  margin-bottom: 20px;
+}
 .hero-title {
   font-family: var(--second-family);
   font-weight: 400;
@@ -16,13 +21,15 @@
   line-height: 120%;
   letter-spacing: 0.01em;
   color: var(--color-scheme-3-text);
-  width: 343px;
-  height: 159px;
-  margin-bottom: 20px;
 }
 
 .hero-title-word {
   display: inline-block;
+}
+
+.description-container {
+  width: 343px;
+  height: 236px;
 }
 
 .hero-description {
@@ -79,12 +86,15 @@
 /* Hero-tablet */
 @media screen and (min-width: 768px) {
   .container.hero-container {
-    padding: 24px 32px;
+    padding-top: 24px;
+    padding-right: 95px;
+    padding-bottom: 24px;
+    padding-left: 32px;
   }
-  .hero-title {
-    width: 426px;
+  .title-container {
+    width: 425px;
     height: 106px;
-    margin-bottom: 20px;
+    margin-bottom: 8px;
   }
   .hero-title-word {
     visibility: hidden;
@@ -97,17 +107,24 @@
     top: 0;
     left: 0;
   }
+
+  .description-container {
+    width: 641px;
+    height: 144px;
+  }
   .hero-description {
     font-size: 18px;
+    margin-bottom: 32px;
     width: 641px;
     height: 58px;
-    margin-bottom: 32px;
   }
   .buttons {
     flex-direction: row;
   }
 
-  .btn.join,
+  .btn.join {
+    width: 144px;
+  }
   .btn.learn {
     width: 144px;
   }
@@ -125,5 +142,39 @@
 /*-----------------*/
 
 /* Hero-desktop */
+@media screen and (min-width: 1336px) {
+  .container.hero-container {
+    padding-top: 80px;
+    padding-right: 67px;
+    padding-bottom: 80px;
+    padding-left: 64px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .title-container {
+    width: 644px;
+    height: 258px;
+  }
+  .hero-title {
+    font-size: 72px;
+    width: 644px;
+    height: 258px;
+  }
+  .description-container {
+    margin-left: 24px;
+  }
+  .buttons {
+    display: inline-block;
+  }
+  .btn-extra {
+    display: contents;
+  }
+  .btn.join {
+    width: 113px;
+  }
+  .btn.learn {
+    width: 128px;
+  }
+}
 
 /*-----------------*/
