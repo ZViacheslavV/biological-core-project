@@ -104,6 +104,7 @@
 
   .programs-subtitle {
     margin-bottom: 24px;
+    font-size: 18px;
   }
 
   .programs-above-text {
@@ -112,7 +113,6 @@
 
   .programs-list {
     align-items: baseline;
-    justify-content: stretch;
     column-gap: 24px;
     row-gap: 27px;
     margin-bottom: 61px;
@@ -178,6 +178,10 @@
     justify-content: center;
     flex-wrap: nowrap;
     margin-bottom: 40px;
+  }
+
+  .programs-picture-thumb {
+    margin-bottom: 32px;
   }
 
   .programs-list .programs-litem {
