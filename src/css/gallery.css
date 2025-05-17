@@ -37,6 +37,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 24px; 
+    
   }
 
   .gallery-item {
@@ -60,11 +61,7 @@
     .title-text-down-gallery{
     margin-bottom: 80px;
     }
-    .gallery-item {
-    flex: 1 0 0;
-    align-self: stretch;
-  }
- 
+  
   }
   
   
