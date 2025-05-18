@@ -18,6 +18,15 @@
     closeModalPremiumBtn: document.querySelector('[data-modal-close-premium]'),
     modal_premium: document.querySelector('[data-modal-premium]'),
 
+    // Modal-81
+    openModalPremiumOneBtn: document.querySelector(
+      '[data-modal-open-premium-one]'
+    ),
+    closeModalPremiumOneBtn: document.querySelector(
+      '[data-modal-close-premium-one]'
+    ),
+    modal_premium_one: document.querySelector('[data-modal-premium-one]'),
+
     // Mobile
     openMobileBtn: document.querySelector('[data-mobile-open]'),
     closeMobileBtn: document.querySelector('[data-mobile-close]'),
@@ -33,6 +42,9 @@
 
   refs.openModalPremiumBtn.addEventListener('click', toggleModalPremium);
   refs.closeModalPremiumBtn.addEventListener('click', toggleModalPremium);
+
+  refs.openModalPremiumOneBtn.addEventListener('click', toggleModalPremium);
+  refs.closeModalPremiumOneBtn.addEventListener('click', toggleModalPremium);
 
   // Mobile
   refs.openMobileBtn.addEventListener('click', toggleMobile);
