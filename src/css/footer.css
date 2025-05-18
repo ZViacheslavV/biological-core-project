@@ -46,6 +46,9 @@
 
 /* Footer */
 
+address{
+    font-style: normal;
+}
 .footer-logo-svg{
     margin-bottom: 20px;
 }
@@ -72,6 +75,13 @@
     background-color: var(--opacity-neutral-darkest-5);
     width: 279px;
     height: 42px;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    outline: none;
+}
+
+.footer-input:hover,
+.footer-input:focus{
+    border: 2px solid var(--color-hawkes-blue);
 }
 
 .footer-btn{
@@ -141,6 +151,7 @@
     font-size: 16px;
     line-height: 1.6;
     color: var(--color-scheme-1-text);
+    margin-bottom: 16px;
 }
 
 .footer-contact-menu-item{
@@ -154,7 +165,7 @@
     justify-content: center;
     align-items: center;
     gap: 12px;
-    padding: 9px 0;
+    padding: 8px 0;
 
     font-weight: 400;
     font-size: 14px;
@@ -200,6 +211,7 @@
 
   .footer-links-p{
     margin: 0;
+    margin-bottom: 16px;
   }
   
   .footer-links{
