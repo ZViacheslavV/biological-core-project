@@ -1,1 +1,162 @@
 /* About us */
+.about-us {
+  padding: 64px 0;
+  background-color: var(--color-scheme-1-background);
+}
+
+@media screen and (min-width: 768px) {
+  .about-us {
+    padding: 40px 0;
+    background-color: inherit;
+  }
+}
+
+@media screen and (min-width: 1336px) {
+  .about-us {
+    padding: 112px 0;
+  }
+}
+
+.title-about-us {
+  font-family: var(--second-family);
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 120%;
+  letter-spacing: 0.01em;
+
+  text-align: center;
+
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .title-about-us {
+    margin-bottom: 24px;
+  }
+}
+
+@media screen and (min-width: 1336px) {
+  .title-about-us {
+    font-size: 52px;
+  }
+}
+
+.text-about-us {
+  font-size: 16px;
+  line-height: 160%;
+
+  text-align: center;
+
+  margin-bottom: 48px;
+}
+
+@media screen and (min-width: 768px) {
+  .text-about-us {
+    font-size: 18px;
+
+    margin-bottom: 40px;
+  }
+}
+
+.list-about-us {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px;
+
+  align-items: center;
+
+  margin-bottom: 48px;
+}
+
+@media screen and (min-width: 768px) {
+  .list-about-us {
+    gap: 24px;
+
+    margin-bottom: 40px;
+  }
+}
+
+.item-about-us {
+  flex-basis: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .item-about-us {
+    flex-basis: calc((100% - 24px) / 2);
+  }
+}
+
+@media screen and (min-width: 1336px) {
+  .item-about-us {
+    flex-basis: calc((100% - 72px) / 4);
+  }
+}
+
+.title-item-about-us {
+  font-family: var(--second-family);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: 0.01em;
+
+  text-align: center;
+
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .title-item-about-us {
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (min-width: 1336px) {
+  .title-item-about-us {
+    font-size: 28px;
+    margin-bottom: 24px;
+  }
+}
+
+.text-item-about-us {
+  line-height: 160%;
+
+  text-align: center;
+}
+
+.join-link-about-us {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 160%;
+  color: var(--color-neutral-darkest);
+
+  text-align: center;
+
+  background-color: var(--color-hawkes-blue);
+  border: 1px solid var(--color-hawkes-blue);
+  border-radius: 100px;
+
+  padding: 10px 24px;
+  width: 343px;
+  height: 46px;
+
+  display: block;
+
+  position: relative;
+}
+
+@media screen and (min-width: 768px) {
+  .join-link-about-us {
+    max-width: 112px;
+    margin: 0 auto;
+  }
+}
+
+.join-link-about-us::before {
+  content: 'Join';
+}
+
+@media screen and (min-width: 768px) {
+  .join-link-about-us::before {
+    content: 'Join now';
+  }
+}

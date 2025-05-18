@@ -10,6 +10,7 @@
   line-height: 150%;
   text-align: center;
   margin-bottom: 12px;
+  display: block;
 }
 
 .programs-subtitle {
@@ -74,7 +75,7 @@
   border: 1px solid var(--color-hawkes-blue);
   border-radius: 100px;
   padding: 10px 24px;
-  width: 343px;
+  max-width: 343px;
   height: 46px;
   display: block;
   background-color: var(--color-hawkes-blue);
@@ -107,12 +108,12 @@
   }
 
   .programs-above-text {
+    font-size: 18px;
     margin-bottom: 40px;
   }
 
   .programs-list {
     align-items: baseline;
-    justify-content: stretch;
     column-gap: 24px;
     row-gap: 27px;
     margin-bottom: 61px;
@@ -144,9 +145,9 @@
     padding: 10px 24px;
     margin: 0 auto;
 
-    width: 110px;
+    max-width: 112px;
     height: 46px;
-    font-size: 15px;
+    font-size: 16px;
   }
 
   .programs-link-btn::before {
@@ -178,6 +179,10 @@
     justify-content: center;
     flex-wrap: nowrap;
     margin-bottom: 40px;
+  }
+
+  .programs-picture-thumb {
+    margin-bottom: 32px;
   }
 
   .programs-list .programs-litem {
