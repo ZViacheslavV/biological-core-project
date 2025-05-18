@@ -69,6 +69,7 @@
 .team-photo-info-cont {
     display: flex;
     flex-direction: column;
+    align-items: center;
     height: 100%;
 }
 
@@ -134,6 +135,19 @@
         padding: 40px 0;
     }
 
+    .team_section_mini_title {
+        margin-bottom: 16px;
+    }
+
+    .team_section_title {
+        font-size: 52px;
+        margin-bottom: 24px;
+    }
+
+    .team_section_p {
+        font-size: 18px;
+        margin-bottom: 40px ;
+    }
 
     .team_section_list {
         flex-direction: row;
@@ -151,7 +165,8 @@
     }
 
     .team-name-title {
-        margin-top: 24px;  
+        margin-top: 24px;
+        font-size: 22px; 
     }
 
     .team-info-title {
@@ -160,6 +175,7 @@
 
     .team-position-title {
         margin-bottom: 16px;
+        font-size: 18px;
         max-width: 400px;
     }
 
@@ -196,7 +212,6 @@
         flex-direction: column;
     } 
     
-
     .team-photo-img img {
         width: 421px;
         height: 410px;  
