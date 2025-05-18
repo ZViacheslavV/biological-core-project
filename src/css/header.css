@@ -53,7 +53,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  gap: 8px;
+  gap: 5px;
   border: 1px solid #c2d9fc;
   border-radius: 100px;
   padding: 4px 20px;
@@ -61,6 +61,11 @@
   height: 34px;
   background: #c2d9fc;
   position: relative;
+  font-family: 'Sarabun', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #0d0b0a;
 }
 
 @media screen and (min-width: 768px) {
@@ -70,7 +75,7 @@
     height: 42px;
   }
   .page-header-link::after {
-    content: 'now';
+    content: 'Now';
   }
 }
 @media screen and (min-width: 1336px) {
@@ -114,6 +119,5 @@
 
 .header-nav-link.active-link {
   border-bottom: 2px solid rgba(13, 11, 10, 0.5);
-  width: 89px;
-  height: 26px;
+  padding-bottom: 2px;
 }
