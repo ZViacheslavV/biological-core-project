@@ -1,1 +1,224 @@
 /* Modal */
+/* Modal */
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    background-color: rgba(46, 47, 66, 0.4);
+    transition-property: opacity, visibility;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.modal {
+    padding: 64px 16px 112px 16px;
+    width: 375px;
+    min-height: 720px;
+    background-color: var(--color-scheme-1-background);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition-property: transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-btn-close {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    padding: 0;
+    cursor: pointer;
+}
+
+.modal-svg {
+    fill: var(--color-scheme-1-text);
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-btn-close:hover .modal-svg, .modal-btn-close:focus .modal-svg {
+    fill: var(--color-neutral);
+}
+
+.modal-title {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 1.2;
+    letter-spacing: 0.01em;
+    text-align: center;
+    color: var(--color-scheme-1-text);
+    margin-bottom: 32px;
+}
+
+.modal-text {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.4;
+    letter-spacing: 0.01em;
+    text-align: center;
+    color: var(--color-scheme-2-text);
+    margin-bottom: 8px;
+}
+
+.modal-text-price {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 1.2;
+    letter-spacing: 0.01em;
+    text-align: center;
+    color: var(--color-scheme-2-text);
+    margin-bottom: 32px;
+}
+
+.modal-form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.modal-label {
+    display: block;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--color-scheme-1-text);
+    margin-bottom: 8px;
+}
+
+.modal-input {
+    border: 1px solid var(--opacity-transparent);
+    outline: transparent;
+    border-radius: 12px;
+    padding: 8px 12px;
+    width: 343px;
+    height: 42px;
+    background-color: var(--opacity-neutral-darkest-5);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--opacity-neutral-darkest-60);
+    transition-property: border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-input:hover, .modal-input:focus {
+    border: 1px solid var(--color-neutral);
+}
+
+.modal-form-btn {
+    display: block;
+    border: 1px solid var(--color-hawkes-blue);
+    border-radius: 100px;
+    padding: 10px 24px;
+    min-width: 343px;
+    height: 46px;
+    background-color: var(--color-hawkes-blue);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--color-neutral-darkest);
+    transition-property: border, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form-btn:hover, .modal-form-btn:focus {
+    border: 1px solid #e1edff;
+    background-color: #e1edff;
+}
+
+@media only screen and (min-width: 768px) {
+    .modal {
+        border-radius: 16px;
+        padding: 64px 92px;
+        width: 704px;
+        min-height: 573px;
+        background-color: var(--color-scheme-1-background);
+    }
+    
+    .modal-title {
+        font-size: 52px;
+        margin-bottom: 24px;
+    }
+    
+    .modal-text {
+        font-size: 22px;
+    }
+    
+    .modal-text-price {
+        font-size: 36px;
+        line-height: 1.4;
+        margin-bottom: 24px;
+    }
+
+    .modal-input {
+        width: 520px;
+    }
+    
+    .modal-form-box-wrap {
+        display: flex;
+        gap: 24px;
+    }
+
+    .modal-form-box-wrap .modal-input {
+        width: 248px;
+    }
+
+    
+    .modal-form-btn {
+        min-width: 155px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+  
+@media only screen and (min-width: 1336px) {
+    .modal {
+        padding: 64px;
+        width: 768px;
+    }
+    
+    .modal-btn-close {
+        top: 16px;
+        right: 16px;
+    }
+    
+    .modal-input {
+        width: 640px;
+    }
+    
+    .modal-form-box-wrap {
+        display: flex;
+        gap: 24px;
+    }
+
+    .modal-form-box-wrap .modal-input {
+        width: 308px;
+    }
+}
