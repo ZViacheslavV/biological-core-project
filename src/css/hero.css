@@ -6,9 +6,16 @@
   max-width: 375px;
   margin: 0 auto;
 }
+.hero-image {
+  max-width: 375px;
+  width: 100%;
+}
 
 @media screen and (min-width: 768px) {
   .hero-thumb {
+    max-width: 768px;
+  }
+  .hero-image {
     max-width: 768px;
   }
 }
@@ -17,17 +24,18 @@
   .hero-thumb {
     max-width: 1440px;
   }
+  .hero-image {
+    max-width: 1440px;
+  }
 }
-.hero-image {
-  min-width: 375px;
-  width: 100%;
-}
+
 .container.hero-container {
   padding: 48px 16px;
   background: var(--color-scheme-3-background);
 }
 .hero-title-container {
-  width: 343px;
+  max-width: 343px;
+  width: 100%;
   height: 159px;
   margin-bottom: 20px;
 }
@@ -45,8 +53,9 @@
 }
 
 .hero-description-container {
-  width: 343px;
-  height: 236px;
+  max-width: 343px;
+  width: 100%;
+  height: auto;
 }
 
 .hero-description {
@@ -55,8 +64,9 @@
   font-size: 16px;
   line-height: 160%;
   color: var(--color-scheme-3-text);
-  width: 343px;
-  height: 104px;
+  max-width: 343px;
+  width: 100%;
+  height: auto;
   margin-bottom: 24px;
 }
 
@@ -65,6 +75,7 @@
   flex-direction: column;
   gap: 16px;
   max-width: 329px;
+  width: 100%;
   height: 108px;
 }
 
@@ -74,6 +85,7 @@
   padding: 10px 24px;
   width: 100%;
   max-width: 329px;
+  width: 100%;
   height: 46px;
   background: var(--color-hawkes-blue);
   text-align: center;
@@ -92,6 +104,7 @@
   border-radius: 100px;
   padding: 10px 24px;
   max-width: 329px;
+  width: 100%;
   height: 46px;
   background: var(--opacity-neutral-darkest-5);
   text-align: center;
@@ -112,7 +125,8 @@
     padding-left: 32px;
   }
   .hero-title-container {
-    width: 425px;
+    max-width: 425px;
+    width: 100%;
     height: 106px;
     margin-bottom: 16px;
   }
@@ -129,26 +143,26 @@
   }
 
   .hero-description-container {
-    width: 641px;
-    height: 144px;
+    max-width: 641px;
+    width: 100%;
   }
   .hero-description {
     font-size: 18px;
     margin-bottom: 32px;
-    width: 641px;
-    height: 58px;
+    max-width: 641px;
+    width: 100%;
   }
   .hero-buttons {
     flex-direction: row;
-    width: 305px;
+    max-width: 305px;
     height: 46px;
   }
 
   .hero-btn.join {
-    width: 144px;
+    max-width: 144px;
   }
   .hero-btn.learn {
-    width: 144px;
+    max-width: 144px;
   }
   .hero-btn-extra {
     display: inline-block;
@@ -174,7 +188,8 @@
     column-gap: 24px;
   }
   .hero-title-container {
-    width: 644px;
+    max-width: 644px;
+    width: 100%;
     height: 258px;
   }
   .hero-title {
@@ -183,18 +198,23 @@
     height: 258px;
   }
 
+  .hero-description-container {
+    max-width: 641px;
+    width: 100%;
+  }
+
   .hero-buttons {
     display: flex;
-    width: 257px;
+    max-width: 257px;
     gap: 16px;
     white-space: nowrap;
   }
 
   .hero-btn.join {
-    width: 113px;
+    max-width: 113px;
   }
   .hero-btn.learn {
-    width: 128px;
+    max-width: 128px;
   }
 }
 
