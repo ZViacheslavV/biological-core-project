@@ -1,12 +1,13 @@
 /* Gallery */
 .gallery-section{
-    padding-top: 64px;
+  background-color: #f2fafa;
+  padding: 64px 0;
+  max-width: 375px;
+  margin: 0 auto;
 }
 
 .container-gallery {
   display: flex;
-  width: 375px;
-  padding: 64px 20px;
   flex-direction: column;
   align-items: center;
 }
@@ -18,7 +19,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: 120%;
-  letter-spacing: 0.4px;
+  letter-spacing: 0.01em;
   margin-bottom: 20px;
 }
 .title-text-down-gallery {
@@ -35,64 +36,61 @@
     display: flex;
     flex-wrap: wrap;
     gap: 24px; 
-
   }
 
   .gallery-item {
-   width: calc((100% - 24px) / 2);
+    width: calc((100% - 24px) / 2);
   }
   
- 
   @media (min-width: 768px) {
     .gallery-section{
-    padding-top: 40px;
+    padding: 40px 0;
+    max-width: 768px;   
 }
     .container-gallery{
     display: flex;
-    width: 768px;
-    padding-top: 64px;
     flex-direction: column;
     align-items: center;
   }
-  */ .title-gallery {
-    margin-bottom: 24px;
+    .title-gallery {
+      margin-bottom: 24px;
   }
 
-  .title-text-down-gallery {
-    margin-bottom: 80px;
+    .title-text-down-gallery {
+      margin-bottom: 80px;
     }
   
   }
   
   
   @media (min-width: 1336px) {
-     .gallery-section{
-    padding-top: 112px;
-}
-   .container-gallery{
-    display: flex;
-    width: 1440px;
-    padding: 112px 64px;
-    flex-direction: column;
-    align-items: center;
+
+    .gallery-section{
+      padding: 112px 0;
+      max-width: 1440px;
+  }
+    .container-gallery{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
   }
 
-  .title-gallery {
-    font-size: 52px;
-    letter-spacing: 0.52px;
-    margin-bottom: 24px;
+    .title-gallery {
+      font-size: 52px;
+      letter-spacing: 0.52px;
+      margin-bottom: 24px;
   }
 
-  .title-text-down-gallery {
-    font-weight: 500;
-    margin-bottom: 80px;
+    .title-text-down-gallery {
+      font-weight: 500;
+      margin-bottom: 80px;
   }
-  .gallery {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 24px;
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
   }
-  .gallery-item {
-    width: calc((100% - 48px) / 3);
+    .gallery-item {
+      width: calc((100% - 48px) / 3);
   }
 }
