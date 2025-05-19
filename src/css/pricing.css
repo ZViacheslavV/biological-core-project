@@ -235,8 +235,8 @@
 @media only screen and (min-width: 768px) {
     .pricing-tablet-btn {
         display: block;
-        position: relative;
-        min-width: 320px;
+        width: 100%;
+        max-width: 320px;
         height: 46px;
         border: 1px solid var(--color-hawkes-blue);
         border-radius: 100px;
@@ -320,8 +320,8 @@
 
 .pricing-btn {
     display: block;
-    position: relative;
-    min-width: 295px;
+    width: 100%;
+    max-width: 295px;
     height: 46px;
     border: 1px solid var(--color-hawkes-blue);
     border-radius: 100px;
@@ -339,7 +339,8 @@
 @media only screen and (min-width: 768px) and (max-width: 1335px) {
     .pricing-btn {
         display: block;
-        min-width: 308px;
+        width: 100%;
+        max-width: 308px;
         margin-top: 32px;
     }
 
@@ -351,7 +352,8 @@
 @media only screen and (min-width: 1336px) {
     .pricing-btn {
         display: block;
-        min-width: 334px;
+        width: 100%;
+        max-width: 334px;
         position: absolute;
         bottom: 32px;
     }
