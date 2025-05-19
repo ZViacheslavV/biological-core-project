@@ -190,7 +190,6 @@
     .pricing-item-title:last-of-type {
         font-size: 22px;
         margin-bottom: 24px;
-        order: 1;
     }
 }
   
@@ -219,7 +218,6 @@
 
     .pricing-item-text:last-of-type {
         font-size: 72px;
-        order: 2;
     }
 }
   
@@ -237,6 +235,7 @@
 @media only screen and (min-width: 768px) {
     .pricing-tablet-btn {
         display: block;
+        position: relative;
         min-width: 320px;
         height: 46px;
         border: 1px solid var(--color-hawkes-blue);
@@ -247,7 +246,6 @@
         font-size: 16px;
         line-height: 1.6;
         color: var(--color-neutral-darkest);
-        order: 3;
         transition-property: color, background-color, border;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -287,7 +285,6 @@
     .pricing-wrap-list:last-of-type {
         margin-bottom: 0;
         width: 320px;
-        order: 4;
     }
   }
   
@@ -323,6 +320,7 @@
 
 .pricing-btn {
     display: block;
+    position: relative;
     min-width: 295px;
     height: 46px;
     border: 1px solid var(--color-hawkes-blue);
