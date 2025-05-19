@@ -21,7 +21,7 @@
   font-family: var(--second-family);
   font-size: 40px;
   font-weight: 400;
-  line-height: 120%;
+  line-height: 1.2;
   letter-spacing: 0.01em;
 
   text-align: center;
@@ -42,8 +42,7 @@
 }
 
 .text-about-us {
-  font-size: 16px;
-  line-height: 160%;
+  line-height: 1.6;
 
   text-align: center;
 
@@ -96,7 +95,7 @@
   font-family: var(--second-family);
   font-size: 24px;
   font-weight: 400;
-  line-height: 140%;
+  line-height: 1.4;
   letter-spacing: 0.01em;
 
   text-align: center;
@@ -118,7 +117,7 @@
 }
 
 .text-item-about-us {
-  line-height: 160%;
+  line-height: 1.6;
 
   text-align: center;
 }
@@ -126,7 +125,7 @@
 .join-link-about-us {
   font-size: 16px;
   font-weight: 500;
-  line-height: 160%;
+  line-height: 1.6;
   color: var(--color-neutral-darkest);
 
   text-align: center;
@@ -136,7 +135,7 @@
   border-radius: 100px;
 
   padding: 10px 24px;
-  width: 343px;
+  max-width: 343px;
   height: 46px;
 
   display: block;
