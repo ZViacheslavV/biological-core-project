@@ -52,3 +52,12 @@
 .mobile-menu-close-btn:focus .modal-form-close-icon-svg {
   fill: var(--white);
 } */
+
+.header-links-animation {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-links-animation:hover,
+.header-links-animation:focus {
+  color: var(--color-neutral);
+}
