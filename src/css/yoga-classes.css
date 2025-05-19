@@ -7,7 +7,7 @@
 .programs-explore-text {
   font-weight: 600;
   font-size: 16px;
-  line-height: 150%;
+  line-height: 1.5;
   text-align: center;
   margin-bottom: 12px;
   display: block;
@@ -16,19 +16,15 @@
 .programs-subtitle {
   font-family: var(--second-family);
   font-size: 40px;
-  line-height: 120%;
+  line-height: 1.2;
   letter-spacing: 0.01em;
   text-align: center;
   margin-bottom: 20px;
 }
 
-/* .programs-third-title-foundations {
-  display: none;
-} */
-
 .programs-above-text {
   font-size: 16px;
-  line-height: 160%;
+  line-height: 1.6;
   text-align: center;
   margin-bottom: 48px;
 }
@@ -59,7 +55,7 @@
 .programs-third-title {
   font-family: var(--second-family);
   font-size: 24px;
-  line-height: 140%;
+  line-height: 1.4;
   letter-spacing: 0.01em;
   text-align: center;
   margin-bottom: 20px;
@@ -67,7 +63,7 @@
 
 .programs-text-underneath {
   font-size: 16px;
-  line-height: 160%;
+  line-height: 1.6;
   text-align: center;
 }
 
@@ -82,7 +78,7 @@
 
   font-weight: 500;
   font-size: 16px;
-  line-height: 160%;
+  line-height: 1.6;
   color: var(--color-neutral-darkest);
   text-align: center;
 
