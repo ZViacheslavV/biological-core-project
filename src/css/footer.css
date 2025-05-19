@@ -1,6 +1,7 @@
 .footer{
     background: var(--color-scheme-1-background);
-    padding: 48px 16px;
+    padding: 48px 0;
+    min-width: 320px;
 }
 
 @media only screen and (min-width: 768px){
@@ -24,23 +25,18 @@
     border: 0px solid var(--color-scheme-1-border);
     border-radius: 16px;
     padding: 32px;
-    width: 343px;
-    max-height: 100%;
+
 }
 
 @media only screen and (min-width: 768px){
     .footer-container{
         padding: 40px 32px;
-        width: 704px;
-        max-height: 100%;
     }
 }
 
 @media only screen and (min-width: 1336px){
     .footer-container{
         padding: 48px;
-        width: 1312px; 
-        max-height: 100%;
     }
 }
 
@@ -73,7 +69,8 @@ address{
     border-radius: 12px;
     padding: 8px 12px;
     background-color: var(--opacity-neutral-darkest-5);
-    width: 279px;
+    width: 100%;
+    max-width: 279px;
     height: 42px;
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
     outline: none;
@@ -88,7 +85,8 @@ address{
     border: 1px solid var(--opacity-transparent);
     border-radius: 100px;
     padding: 10px 24px;
-    width: 279px;
+    width: 100%;
+    max-width: 279px;
     height: 46px;
     background: var(--opacity-neutral-darkest-5);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
