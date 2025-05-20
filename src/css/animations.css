@@ -59,7 +59,7 @@
 
 .silver-button-animation:hover,
 .silver-button-animation:focus {
-  background-color: rgba(13, 11, 10, 0.03);
+  background-color: var(--color-neutral-lightest);
 }
 
 /* Header animation */
