@@ -79,7 +79,7 @@
   height: 108px;
 }
 
-.hero-btn.join {
+.hero-btn-join {
   border: 1px solid var(--color-hawkes-blue);
   border-radius: 100px;
   padding: 10px 24px;
@@ -99,7 +99,7 @@
   display: none;
 }
 
-.hero-btn.learn {
+.hero-btn-learn {
   border: 1px solid var(--opacity-transparent);
   border-radius: 100px;
   padding: 10px 24px;
@@ -158,10 +158,10 @@
     height: 46px;
   }
 
-  .hero-btn.join {
+  .hero-btn-join {
     max-width: 144px;
   }
-  .hero-btn.learn {
+  .hero-btn-learn {
     max-width: 144px;
   }
   .hero-btn-extra {
@@ -210,10 +210,10 @@
     white-space: nowrap;
   }
 
-  .hero-btn.join {
+  .hero-btn-join {
     max-width: 113px;
   }
-  .hero-btn.learn {
+  .hero-btn-learn {
     max-width: 128px;
   }
 }
