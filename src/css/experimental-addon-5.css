@@ -1,0 +1,10 @@
+.team_section_list_item {
+    transition: transform 300ms ease, box-shadow 300ms ease;
+}
+
+.team_section_list_item:hover,
+.team_section_list_item:focus {
+    transform: scale(1.03);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    border-radius: 16px;
+}
