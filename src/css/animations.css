@@ -31,11 +31,20 @@
   transition: transform 300ms ease, box-shadow 300ms ease;
 }
 
-.image-animation:hover,
+/* .image-animation:hover,
 .image-animation:focus {
   transform: scale(1.03);
-  /*   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
-  border-radius: 16px; */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  border-radius: 16px;
+} */
+
+/* Programs hover */
+
+.programs-litem:hover .image-animation,
+.programs-litem:focus .image-animation {
+  transform: scale(1.03);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  border-radius: 16px;
 }
 
 .blue-button-animation:hover,
@@ -49,6 +58,7 @@
   background-color: rgba(13, 11, 10, 0.03);
 }
 
+/* Header animation */
 .header-links-animation {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }

@@ -71,6 +71,10 @@
   --color-scheme-4-foreground: var(--color-drover-lightest);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: var(--font-family);
   color: var(--color-scheme-1-text);
