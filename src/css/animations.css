@@ -27,18 +27,22 @@
   border 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
-.image-animation {
+/* Gallery hover */
+.image-gallery-animation {
   transition: transform 300ms ease, box-shadow 300ms ease;
 }
-
-/* .image-animation:hover,
-.image-animation:focus {
+.image-gallery-animation:hover,
+.image-gallery-animation:focus {
   transform: scale(1.03);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
   border-radius: 16px;
-} */
+}
 
 /* Programs hover */
+
+.image-animation {
+  transition: transform 300ms ease, box-shadow 300ms ease;
+}
 
 .programs-litem:hover .image-animation,
 .programs-litem:focus .image-animation {
