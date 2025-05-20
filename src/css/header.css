@@ -17,34 +17,12 @@
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  /* display: none; */
 }
-
-/* @media screen and (min-width: 768px) {
-  .header-logo {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    flex-grow: 1;
-    display: flex;
-    justify-content: flex-start;
-  }
-}
-@media screen and (min-width: 1336px) {
-  .header-logo {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    flex-grow: 1;
-  }
-} */
 
 .burger-btn {
   background-color: transparent;
 }
 
-/* @media screen and (min-width: 768px) {
-} */
 @media screen and (min-width: 1336px) {
   .burger-btn {
     display: none;
