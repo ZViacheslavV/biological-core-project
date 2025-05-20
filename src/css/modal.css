@@ -1,5 +1,4 @@
 /* Modal */
-/* Modal */
 .backdrop {
     position: fixed;
     top: 0;
@@ -24,6 +23,7 @@
 
 .modal {
     padding: 64px 16px 112px 16px;
+    width: 100%;
     max-width: 375px;
     min-height: 720px;
     background-color: var(--color-scheme-1-background);
