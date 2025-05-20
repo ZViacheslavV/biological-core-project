@@ -1,10 +1,17 @@
 .team_section_list_item {
+    text-align: center;
+    border-radius: 0 0 4px 4px;
+    overflow: hidden;
     transition: transform 300ms ease, box-shadow 300ms ease;
+    border-radius: 16px;
 }
 
-.team_section_list_item:hover,
-.team_section_list_item:focus {
+.team_section_list_item:hover {
     transform: scale(1.03);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); 
     border-radius: 16px;
+}
+
+.team-socials-list {
+    padding-bottom: 12px;
 }

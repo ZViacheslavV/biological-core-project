@@ -40,8 +40,10 @@
 
   .gallery-item {
     width: calc((100% - 24px) / 2);
+    overflow: hidden;
+    border-radius: 16px;
   }
-  
+
   @media (min-width: 768px) {
     .gallery-section{
     padding: 40px 0;
