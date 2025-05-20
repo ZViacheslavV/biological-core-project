@@ -33,7 +33,7 @@
 }
 .image-gallery-animation:hover,
 .image-gallery-animation:focus {
-  transform: scale(1.03);
+  transform: scale(1.021);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
   border-radius: 16px;
 }
@@ -46,7 +46,7 @@
 
 .programs-litem:hover .image-animation,
 .programs-litem:focus .image-animation {
-  transform: scale(1.03);
+  transform: scale(1.021);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
   border-radius: 16px;
 }
