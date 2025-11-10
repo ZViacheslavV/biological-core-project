@@ -17,6 +17,7 @@
   }
 }
 
+/* Buttons animation */
 .blue-button-animation {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -27,32 +28,8 @@
   border 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
-/* Gallery hover */
-.image-gallery-animation {
-  transition: transform 300ms ease, box-shadow 300ms ease;
-}
-.image-gallery-animation:hover,
-.image-gallery-animation:focus {
-  transform: scale(1.021);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
-  border-radius: 16px;
-}
-
-/* Programs hover */
-
-.image-animation {
-  transition: transform 300ms ease, box-shadow 300ms ease;
-}
-
-.programs-litem:hover .image-animation,
-.programs-litem:focus .image-animation {
-  transform: scale(1.021);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
-  border-radius: 16px;
-}
-
 .blue-button-animation:hover,
-.blue-button-animmation:focus {
+.blue-button-animation:focus {
   background-color: #e1edff;
   border: 1px solid #e1edff;
 }
@@ -72,6 +49,30 @@
   color: var(--color-neutral);
 }
 
+/* Programs animation */
+
+.image-animation {
+  transition: transform 300ms ease, box-shadow 300ms ease;
+}
+
+.programs-litem:hover .image-animation,
+.programs-litem:focus .image-animation {
+  transform: scale(1.021);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  border-radius: 16px;
+}
+
+/* Gallery hover */
+.image-gallery-animation {
+  transition: transform 300ms ease, box-shadow 300ms ease;
+}
+.image-gallery-animation:hover,
+.image-gallery-animation:focus {
+  transform: scale(1.021);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  border-radius: 16px;
+}
+
 /* Team section personal */
 
 /* .team_section_list_item {
@@ -84,3 +85,25 @@
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
   border-radius: 16px;
 } */
+
+/* Testimonials */
+/* .testimonials-photo {
+  transition: transform 300ms ease, box-shadow 300ms ease;
+}
+
+.testimonials-photo:hover,
+.testimonials-photo:focus {
+  transform: scale(1.08);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+} */
+
+/* Pricing */
+.pricing-item {
+  transition: transform 300ms ease, box-shadow 300ms ease;
+}
+
+.pricing-item:hover,
+.pricing-item:focus {
+  transform: scale(1.012);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
