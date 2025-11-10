@@ -1,15 +1,18 @@
-const setupToggle = name => {
-  const el = document.querySelector(`[data-${name}]`);
-  const openBtn = document.querySelector(`[data-${name}-open]`);
-  const closeBtn = document.querySelector(`[data-${name}-close]`);
+(() => {
+  const setupToggle = name => {
+    const el = document.querySelector(`[data-${name}]`);
+    const openBtn = document.querySelector(`[data-${name}-open]`);
+    const closeBtn = document.querySelector(`[data-${name}-close]`);
 
-  if (!el || !openBtn || !closeBtn) return;
+    if (!el || !openBtn || !closeBtn) return;
 
-  const toggle = () => {
-    const isOpen = el.classList.toggle('is-open');
+    const toggle = () => {
+      const isOpen = el.classList.toggle('is-open');
+      console.log(isOpen);
+    };
+    openBtn.addEventListener('click', toggle);
+    closeBtn.addEventListener('click', toggle);
   };
-  openBtn.addEventListener('click', toggle);
-  closeBtn.addEventListener('click', toggle);
-};
 
-setupToggle('mobile');
+  setupToggle('mobile');
+})();
