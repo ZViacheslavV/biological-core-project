@@ -17,6 +17,15 @@
   }
 }
 
+@keyframes spin3d {
+  0% {
+    transform: translateX(-50%) rotateY(0deg);
+  }
+  100% {
+    transform: translateX(-50%) rotateY(360deg);
+  }
+}
+
 /* Buttons animation */
 .blue-button-animation {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
