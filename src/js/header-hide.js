@@ -8,6 +8,11 @@
   const toggleHeaderOnScroll = () => {
     const y = window.scrollY;
     header.classList.toggle('hide', y > lastY && y > 40);
+    /*     if (y > lastY && y > 40) {
+      header.classList.add('hide');
+    } else {
+      header.classList.remove('hide');
+    } */
 
     // If moving - close header
     if (y !== lastY) {
@@ -71,5 +76,4 @@ closeBtnHide.addEventListener('click', () => {
   burgerBtnHide.classList.remove('hide');
   closeBtnHide.classList.remove('visible');
   closeBtnHide.classList.add('hide');
-});
- */
+}); */
