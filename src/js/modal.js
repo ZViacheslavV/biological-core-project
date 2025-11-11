@@ -38,7 +38,3 @@
   // Modals init:
   ['cheap', 'average', 'premium', 'premium-one'].forEach(setupModal);
 })();
-
-//test message
-//test message2
-//test message3
