@@ -3,8 +3,7 @@ const logo = document.querySelector('.header-logo');
 logo.addEventListener('mouseenter', () => {
   logo.classList.add('spin');
 
-  // Якщо хочеш обмежити 3 секундами
   setTimeout(() => {
-    logo.classList.remove('spin'); // видаляє клас після завершення
+    logo.classList.remove('spin');
   }, 3000);
 });
