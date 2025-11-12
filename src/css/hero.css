@@ -82,7 +82,7 @@
 .hero-btn-join {
   border: 1px solid var(--color-hawkes-blue);
   border-radius: 100px;
-  padding: 10px 24px;
+
   width: 100%;
   max-width: 329px;
   width: 100%;
@@ -95,6 +95,16 @@
   line-height: 160%;
   color: var(--color-neutral-darkest);
 }
+
+.hero-btn-join a,
+.hero-btn-learn a {
+  padding: 10px 24px;
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: inherit;
+}
+
 .hero-btn-extra {
   display: none;
 }
@@ -102,7 +112,6 @@
 .hero-btn-learn {
   border: 1px solid var(--opacity-transparent);
   border-radius: 100px;
-  padding: 10px 24px;
   max-width: 329px;
   width: 100%;
   height: 46px;

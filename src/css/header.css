@@ -7,10 +7,11 @@
   left: 0;
   right: 0;
   top: 0;
+  box-shadow: 0 1px 0 #f2fafa;
 }
 
 .page-header.hide {
-  transform: translateY(-100%);
+  transform: translateY(-101%);
 }
 
 .container-header {
@@ -39,6 +40,12 @@
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+  padding: 23px 46px;
+  transform-style: preserve-3d;
+}
+
+.header-logo.spin {
+  animation: spin3d 3s linear forwards;
 }
 
 .burger-btn,
