@@ -1,31 +1,27 @@
-(() => {
-  const header = document.querySelector('.page-header');
-  const mobileMenu = document.querySelector('.mobile-menu');
-  const burger = document.querySelector('.burger-btn');
-  const closeBtn = document.querySelector('.close-btn');
-  let lastY = window.scrollY;
+import { refs } from './refs';
 
-  const toggleHeaderOnScroll = () => {
-    const y = window.scrollY;
-    header.classList.toggle('hide', y > lastY && y > 40);
+let lastY = window.scrollY;
 
-    // If moving - close header
-    if (y !== lastY) {
-      mobileMenu.classList.remove('is-open');
-      burger.classList.remove('hide');
-      closeBtn.classList.replace('visible', 'hide');
-    }
+const toggleHeaderOnScroll = () => {
+  const y = window.scrollY;
+  refs.header.classList.toggle('hide', y > lastY && y > 40);
 
-    lastY = y;
-  };
+  // If moving - close header
+  if (y !== lastY) {
+    refs.mobileMenu.classList.remove('is-open');
+    refs.burger.classList.remove('hide');
+    refs.closeBtn.classList.replace('visible', 'hide');
+  }
 
-  const toggleButtons = isBurgerVisible => {
-    burger.classList.toggle('hide', !isBurgerVisible);
-    closeBtn.classList.toggle('hide', isBurgerVisible);
-    closeBtn.classList.toggle('visible', !isBurgerVisible);
-  };
+  lastY = y;
+};
 
-  window.addEventListener('scroll', toggleHeaderOnScroll);
-  burger.addEventListener('click', () => toggleButtons(false));
-  closeBtn.addEventListener('click', () => toggleButtons(true));
-})();
+const toggleButtons = isBurgerVisible => {
+  refs.burger.classList.toggle('hide', !isBurgerVisible);
+  refs.closeBtn.classList.toggle('hide', isBurgerVisible);
+  refs.closeBtn.classList.toggle('visible', !isBurgerVisible);
+};
+
+window.addEventListener('scroll', toggleHeaderOnScroll);
+refs.burger.addEventListener('click', () => toggleButtons(false));
+refs.closeBtn.addEventListener('click', () => toggleButtons(true));

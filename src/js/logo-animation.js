@@ -1,9 +1,9 @@
-const logo = document.querySelector('.header-logo');
+import { refs } from './refs';
 
-logo.addEventListener('mouseenter', () => {
-  logo.classList.add('spin');
+refs.header.addEventListener('mouseenter', () => {
+  refs.logo.classList.add('spin');
 
   setTimeout(() => {
-    logo.classList.remove('spin');
+    refs.logo.classList.remove('spin');
   }, 3000);
 });

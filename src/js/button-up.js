@@ -1,4 +1,4 @@
-const scrollBtn = document.querySelector('.scroll-to-top');
+import { refs } from './refs';
 
 let lastScroll = window.scrollY;
 let isVisible = false;
@@ -17,16 +17,16 @@ window.addEventListener('scroll', () => {
     const shouldShow = scrolledToBottom || (scrollingUp && currentScroll > 350);
 
     if (shouldShow && !isVisible) {
-      scrollBtn.classList.add('visible');
+      refs.scrollBtn.classList.add('visible');
       isVisible = true;
 
       clearTimeout(hideTimeout);
       hideTimeout = setTimeout(() => {
-        scrollBtn.classList.remove('visible');
+        refs.scrollBtn.classList.remove('visible');
         isVisible = false;
       }, 4700);
     } else if (!shouldShow && isVisible) {
-      scrollBtn.classList.remove('visible');
+      refs.scrollBtn.classList.remove('visible');
       isVisible = false;
       clearTimeout(hideTimeout);
     }
@@ -35,6 +35,6 @@ window.addEventListener('scroll', () => {
   }, 70);
 });
 
-scrollBtn.addEventListener('click', () => {
+refs.scrollBtn.addEventListener('click', () => {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 });

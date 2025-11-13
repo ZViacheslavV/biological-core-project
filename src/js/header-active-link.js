@@ -1,8 +1,7 @@
-const navLinks = document.querySelectorAll('.header-nav-link');
-const sections = document.querySelectorAll('section, .footer');
+import { refs } from './refs';
 
 const resetHeaderLinksUnderlines = () =>
-  navLinks.forEach(link => link.classList.remove('active-link'));
+  refs.navLinks.forEach(link => link.classList.remove('active-link'));
 
 const observer = new IntersectionObserver(
   entries => {
@@ -30,4 +29,4 @@ const observer = new IntersectionObserver(
   }
 );
 
-sections.forEach(section => observer.observe(section));
+refs.sections.forEach(section => observer.observe(section));
