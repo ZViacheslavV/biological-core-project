@@ -8,7 +8,6 @@
 
     const toggle = () => {
       const isOpen = el.classList.toggle('is-open');
-      console.log(isOpen);
     };
     openBtn.addEventListener('click', toggle);
     closeBtn.addEventListener('click', toggle);
