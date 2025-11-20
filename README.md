@@ -1,7 +1,7 @@
 # 🌸 [YogaBloom <u>(website)</u>](https://zviacheslavv.github.io/biological-core-project/)
 > A clean, responsive yoga learning website built to inspire balance and mindfulness.  
 
-**YogaBloom** is a modern front-end project showcasing a calm, user-friendly design for a yoga studio or educational platform.  
+**YogaBloom** is a front-end project showcasing a calm, user-friendly design for a yoga studio or educational platform.  
 It focuses on simplicity, smooth animations, and adaptive layouts to provide a serene experience across all devices.  
 
 ---
