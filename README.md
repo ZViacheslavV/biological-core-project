@@ -15,4 +15,6 @@ It focuses on simplicity, smooth animations, and adaptive layouts to provide a s
   
 - **Vite** – fast development and optimized build system
   
-- **Git** – version control and collaboration  
+- **Git** – version control and collaboration
+
+- **Figma** – UI specification and layout alignment
